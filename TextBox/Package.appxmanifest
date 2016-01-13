@@ -7,14 +7,14 @@
   IgnorableNamespaces="uap mp">
 
   <Identity
-    Name="8e4cd849-43ce-44eb-9383-d509de246bb5"
+    Name="117361f4-0fb7-4c39-9344-ddb44119b553"
     Publisher="CN=Dara"
     Version="1.0.0.0" />
 
-  <mp:PhoneIdentity PhoneProductId="8e4cd849-43ce-44eb-9383-d509de246bb5" PhonePublisherId="00000000-0000-0000-0000-000000000000"/>
+  <mp:PhoneIdentity PhoneProductId="117361f4-0fb7-4c39-9344-ddb44119b553" PhonePublisherId="00000000-0000-0000-0000-000000000000"/>
 
   <Properties>
-    <DisplayName>ListBox</DisplayName>
+    <DisplayName>TextBox</DisplayName>
     <PublisherDisplayName>Dara</PublisherDisplayName>
     <Logo>Assets\StoreLogo.png</Logo>
   </Properties>
@@ -30,12 +30,12 @@
   <Applications>
     <Application Id="App"
       Executable="$targetnametoken$.exe"
-      EntryPoint="ListBox.App">
+      EntryPoint="TextBox.App">
       <uap:VisualElements
-        DisplayName="ListBox"
+        DisplayName="TextBox"
         Square150x150Logo="Assets\Square150x150Logo.png"
         Square44x44Logo="Assets\Square44x44Logo.png"
-        Description="ListBox"
+        Description="TextBox"
         BackgroundColor="transparent">
         <uap:DefaultTile Wide310x150Logo="Assets\Wide310x150Logo.png"/>
         <uap:SplashScreen Image="Assets\SplashScreen.png" />

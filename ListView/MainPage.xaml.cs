@@ -1,4 +1,6 @@
-﻿using System;
+﻿using ListView.Model;
+using ListView.ViewModel;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -25,6 +27,9 @@ namespace ListView
         public MainPage()
         {
             this.InitializeComponent();
+            EmployeeViewModel evm = new EmployeeViewModel();
+            List<Employee> employeeList = evm.GetEmployee();
+            EmployeeListView.ItemsSource = employeeList;
         }
     }
 }
