@@ -10,6 +10,7 @@
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
         <ScrollViewer>
             <StackPanel>
+                <!--aka.ms/uwptextbox-->
                 <!--Normal TextBox-->
                 <TextBox />
                 <!--Normal TextBox with header - autocorrect-->
