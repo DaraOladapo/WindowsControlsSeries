@@ -8,6 +8,16 @@
     mc:Ignorable="d">
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-
+        <GridView Name="EmployeeGridView">
+            <GridView.ItemTemplate>
+                <DataTemplate>
+                    <StackPanel Margin="6">
+                        <Image Height="64" Margin="6" Source="{Binding ImagePath}"/>
+                        <TextBlock Text="{Binding Name}"/>
+                        <TextBlock Text="{Binding Phone}"/>
+                    </StackPanel>
+                </DataTemplate>
+            </GridView.ItemTemplate>
+        </GridView>
     </Grid>
 </Page>

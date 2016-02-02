@@ -1,0 +1,29 @@
+﻿<Page
+    x:Class="TextBox.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:TextBox"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <ScrollViewer>
+            <StackPanel>
+                <!--aka.ms/uwptextbox-->
+                <!--Normal TextBox-->
+                <TextBox />
+                <!--Normal TextBox with header - autocorrect-->
+                <TextBox Header="General Value" PlaceholderText="enter value here"/>
+                <!--Numerical Value Input-->
+                <TextBox Header=" Number Value" PlaceholderText="xxxxxxxx" InputScope="Number"/>
+                <!--Chat text input - no auto-correct-->
+                <TextBox Header="Chat Text" PlaceholderText="Chat Text" InputScope="Chat"/>
+                <!--Email, Name or Address-->
+                <TextBox Header="Email, Name or Address" PlaceholderText="Email, Name or Address" InputScope="EmailNameOrAddress"/>
+                <!--Phone Number-->
+                <TextBox Header="Telephone Number" PlaceholderText="(425)-24223" InputScope="TelephoneNumber"/>
+            </StackPanel>
+        </ScrollViewer>
+    </Grid>
+</Page>

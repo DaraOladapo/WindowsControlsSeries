@@ -9,7 +9,7 @@
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
         <StackPanel VerticalAlignment="Center" >
-            <ProgressBar Value="6" Margin="4"/>
+            <ProgressBar Value="25" Margin="4"/>
             <ProgressBar IsIndeterminate="True" Margin="4"/>
             <ProgressRing IsActive="True" Margin="4"/>
         </StackPanel>

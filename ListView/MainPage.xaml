@@ -8,6 +8,18 @@
     mc:Ignorable="d">
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-
+        <ListView Name="EmployeeListView">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <StackPanel Orientation="Horizontal" Margin="6">
+                        <Image Source="{Binding ImagePath}" Height="64"/>
+                        <StackPanel VerticalAlignment="Center" Margin="6">
+                            <TextBlock Text="{Binding Name}"/>
+                            <TextBlock Text="{Binding Phone}"/>
+                        </StackPanel>
+                    </StackPanel>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
     </Grid>
 </Page>

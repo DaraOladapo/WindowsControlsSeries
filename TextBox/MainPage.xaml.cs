@@ -1,6 +1,4 @@
-﻿using ListView.Model;
-using ListView.ViewModel;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -17,7 +15,7 @@ using Windows.UI.Xaml.Navigation;
 
 // The Blank Page item template is documented at http://go.microsoft.com/fwlink/?LinkId=402352&clcid=0x409
 
-namespace ListView
+namespace TextBox
 {
     /// <summary>
     /// An empty page that can be used on its own or navigated to within a Frame.
@@ -27,9 +25,6 @@ namespace ListView
         public MainPage()
         {
             this.InitializeComponent();
-            EmployeeViewModel evm = new EmployeeViewModel();
-            List<Employee> employeeList = evm.GetEmployee();
-            EmployeeListView.ItemsSource = employeeList;
         }
     }
 }

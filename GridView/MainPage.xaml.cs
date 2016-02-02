@@ -1,4 +1,6 @@
-﻿using System;
+﻿using GridView.Model;
+using GridView.ViewModel;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -25,6 +27,9 @@ namespace GridView
         public MainPage()
         {
             this.InitializeComponent();
+            EmployeeViewModel evm = new EmployeeViewModel();
+            List<Employee> employeeList = evm.GetEmployee();
+            EmployeeGridView.ItemsSource = employeeList;
         }
     }
 }
