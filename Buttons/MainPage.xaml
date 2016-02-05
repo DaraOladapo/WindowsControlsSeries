@@ -10,22 +10,22 @@
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
         <StackPanel Margin="4">
             <!--Basic Button-->
-            <Button Content="Button"/>
+            <Button Margin="4" Content="Button"/>
             <!--Normal also-->
-            <Button>
+            <Button Margin="4" >
                     Button
             </Button>
             <!--Making the button richer-->
-            <Button>
+            <Button Margin="4">
                 <Button.Content>
                     <StackPanel>
                         <Image Source="Assets/CompAdd.png" Height="64"/>
-                        <TextBlock Text="Click Me"/>
+                        <TextBlock Text="Click Me" HorizontalAlignment="Center"/>
                     </StackPanel>
                 </Button.Content>
             </Button>
-            <ToggleButton Content="Change Value" Click="ToggleButton_Click" Name="StateToggle"/>
-            <TextBlock Name="ButtonState"/>
+            <ToggleButton  Margin="4"  Content="Change Value" Click="ToggleButton_Click" Name="StateToggle"/>
+            <TextBlock  Margin="4"  Name="ButtonState"/>
         </StackPanel>
     </Grid>
 </Page>
